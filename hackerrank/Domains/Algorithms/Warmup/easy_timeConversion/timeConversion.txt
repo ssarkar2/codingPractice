@@ -1,0 +1,19 @@
+#https://www.hackerrank.com/challenges/time-conversion
+#!/bin/python
+
+import sys
+
+
+time = raw_input().strip()
+a = time.split(':')
+hr = int(a[0])
+min = int(a[1])
+sec = int(''.join(list(a[2])[0:2]))
+tag = ''.join(list(a[2])[2:])
+if hr == 12:
+    hr = 0
+if tag == 'AM':
+    print ':'.join([[str(i),'0'+str(i)][i < 10] for i in [hr, min, sec]])
+else:
+    
+    print ':'.join([[str(i),'0'+str(i)][i < 10] for i in [hr+12, min, sec]])
