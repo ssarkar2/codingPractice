@@ -1,5 +1,5 @@
 #!/bin/python
-
+#https://www.hackerrank.com/challenges/equal/problem
 import sys
 
 def equal(arr):

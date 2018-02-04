@@ -1,5 +1,5 @@
 #!/bin/python
-
+#https://www.hackerrank.com/challenges/the-power-sum/problem
 import sys
 
 def helper(X,N,lst):
