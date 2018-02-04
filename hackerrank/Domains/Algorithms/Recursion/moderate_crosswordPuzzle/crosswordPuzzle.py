@@ -125,7 +125,6 @@ def crosswordPuzzle(crossword, hints):
     return [''.join(r) for r in board]
 
 if __name__ == "__main__":
-    '''
     crossword = []
     crossword_i = 0
     for crossword_i in xrange(10):
@@ -179,4 +178,4 @@ if __name__ == "__main__":
                  '++++++++++']
     result = crosswordPuzzle(crossword, hints)
     print "\n".join(map(str, result))
-                 
+    '''
