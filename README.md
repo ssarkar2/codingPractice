@@ -1,2 +1,2 @@
 # codingPractice
-Codes I wrote for practicing in sites like hackerrank etc.
+Practice samples in sites like hackerrank, codewars etc.
