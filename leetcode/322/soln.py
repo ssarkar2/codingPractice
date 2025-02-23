@@ -1,4 +1,11 @@
-'''
+class Solution(object):
+    def coinChange(self, coins, amount):
+        """
+        :type coins: List[int]
+        :type amount: int
+        :rtype: int
+        """
+        '''
         f(i,j) ... min num coins to make up "j" using first "i" coins
 
         f(i,j):
@@ -13,7 +20,6 @@
             f[i][0] = i//coins[0] if i % coins[0] == 0 else -1
         for i in range(len(coins)):
             f[0][i] = 0
-
         for max_amount in range(1, amount+1):
             for num_coins_used in range(1, len(coins)):
                 if num_coins_used-1 >= 0:
@@ -35,4 +41,5 @@
                     f[max_amount][num_coins_used] = -1
         x = [i for i in f[amount] if i >= 0]
         return -1 if len(x) == 0 else min(x)
-       
+
+        
