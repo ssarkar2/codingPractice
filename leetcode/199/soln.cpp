@@ -9,12 +9,6 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
-void print(vector<int> v) {
-    for (auto i: v) {
-        cout << i << " ";
-    }
-    cout << "\n";
-}
 
 class Solution {
 public:
